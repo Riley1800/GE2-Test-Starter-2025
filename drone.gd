@@ -16,9 +16,13 @@ func _ready():
 
 func _process(delta):
 
-	var up = Input.get_axis("up", 0)
+	var up = Input.get_axis("up", "blank")
 	if abs(up) > 0:     
 		global_translate(- global_transform.basis.y * speed * up *  delta)
+
+	var move = Input.get_axis("forward", "reverse")
+	if abs(move) > 0:   
+		position = position + global_transform.basis.x * speed * move *  delta
 
 	var turn = Input.get_axis("left", "right")
 	if abs(turn) > 0:   
