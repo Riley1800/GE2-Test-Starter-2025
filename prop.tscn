@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://coutphajph5ix"]
+[gd_scene load_steps=5 format=3 uid="uid://coutphajph5ix"]
 
 [ext_resource type="Script" uid="uid://dgabfvwgjhkrw" path="res://prop.gd" id="1_7ky6l"]
 
@@ -10,12 +10,6 @@ albedo_color = Color(0.0431373, 0.0431373, 0.0431373, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l1x3g"]
 albedo_color = Color(0.0431373, 0.0431373, 0.0431373, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bw8cs"]
-albedo_color = Color(0.0431373, 0.0431373, 0.0431373, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u6dcr"]
-albedo_color = Color(0.0430392, 0.0430392, 0.0430392, 1)
 
 [node name="Prop" type="Node3D"]
 
@@ -29,25 +23,13 @@ height = 0.168884
 material = SubResource("StandardMaterial3D_t34q6")
 
 [node name="PropProng1" type="CSGBox3D" parent="Prop"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.392242, 1.40017, -0.120925)
-size = Vector3(0.0916748, 0.0950928, 0.259277)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.392242, 1.40017, -0.23677)
+size = Vector3(0.0916748, 0.0950928, 0.490967)
 material = SubResource("StandardMaterial3D_7ky6l")
 script = ExtResource("1_7ky6l")
 
 [node name="PropProng2" type="CSGBox3D" parent="Prop"]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.536301, 1.40017, -0.225826)
-size = Vector3(0.0916748, 0.0950928, 0.259277)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.411179, 1.40017, -0.225826)
+size = Vector3(0.0916748, 0.0950928, 0.509521)
 material = SubResource("StandardMaterial3D_l1x3g")
-script = ExtResource("1_7ky6l")
-
-[node name="PropProng3" type="CSGBox3D" parent="Prop"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.388955, 1.40017, -0.360329)
-size = Vector3(0.0916748, 0.0950928, 0.259277)
-material = SubResource("StandardMaterial3D_bw8cs")
-script = ExtResource("1_7ky6l")
-
-[node name="PropProng4" type="CSGBox3D" parent="Prop"]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.277406, 1.40017, -0.218901)
-size = Vector3(0.0916748, 0.0950928, 0.259277)
-material = SubResource("StandardMaterial3D_u6dcr")
 script = ExtResource("1_7ky6l")
