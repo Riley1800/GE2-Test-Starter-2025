@@ -10,8 +10,8 @@ size = Vector3(0.302246, 0.160645, 1)
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.352572, 0.0358547, 0)
 
-[node name="PropArm" parent="CSGCombiner3D" instance=ExtResource("1_uvgqj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.452556, -0.563561, -0.372292)
+[node name="TopRight" parent="CSGCombiner3D" instance=ExtResource("1_uvgqj")]
+transform = Transform3D(0.113446, 0, -0.74137, 0, 0.75, 0, 0.74137, 0, 0.113446, 0.174191, -0.403402, -0.751414)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00390851, 0.37778, 0)
@@ -23,3 +23,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.348663, -0.150391, 0)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/CSGBox3D/RigidBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.348877, 0.150216, 0)
 shape = SubResource("BoxShape3D_etgmo")
+
+[node name="BottomRight" parent="CSGCombiner3D" instance=ExtResource("1_uvgqj")]
+transform = Transform3D(-0.113446, 0, -0.74137, 0, 0.75, 0, 0.74137, 0, -0.113446, 0.298, -0.403, 0.104)
+
+[node name="BottomLeft" parent="CSGCombiner3D" instance=ExtResource("1_uvgqj")]
+transform = Transform3D(-0.113446, 0, 0.74137, 0, 0.75, 0, -0.74137, 0, -0.113446, -0.162883, -0.403, 0.73585)
+
+[node name="TopLeft" parent="CSGCombiner3D" instance=ExtResource("1_uvgqj")]
+transform = Transform3D(0.113446, 0, 0.74137, 0, 0.75, 0, -0.74137, 0, 0.113446, -0.245004, -0.403, -0.107205)
