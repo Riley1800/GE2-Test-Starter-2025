@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://coutphajph5ix"]
+[gd_scene load_steps=6 format=3 uid="uid://coutphajph5ix"]
 
 [ext_resource type="Script" uid="uid://dgabfvwgjhkrw" path="res://prop.gd" id="1_7ky6l"]
+[ext_resource type="Script" uid="uid://dn83iggfl4bkq" path="res://arm_to_prop.gd" id="1_l1x3g"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t34q6"]
 albedo_color = Color(0.0431373, 0.0431373, 0.0431373, 1)
@@ -21,6 +22,7 @@ transform = Transform3D(1, 0, 0, 0, 0.995121, -0.0986598, 0, 0.0986598, 0.995121
 radius = 0.0717773
 height = 0.168884
 material = SubResource("StandardMaterial3D_t34q6")
+script = ExtResource("1_l1x3g")
 
 [node name="PropProng1" type="CSGBox3D" parent="Prop"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.392242, 1.40017, -0.23677)
