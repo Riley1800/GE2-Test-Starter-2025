@@ -21,7 +21,6 @@ albedo_color = Color(0.0430392, 0.0430392, 0.0430392, 1)
 
 [node name="Prop" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0258952, -0.142914, 0)
-script = ExtResource("1_7ky6l")
 
 [node name="ArmToProp" type="CSGCylinder3D" parent="Prop"]
 transform = Transform3D(1, 0, 0, 0, 0.995121, -0.0986598, 0, 0.0986598, 0.995121, 0.399999, 1.30149, -0.240309)
@@ -33,18 +32,22 @@ material = SubResource("StandardMaterial3D_t34q6")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.392242, 1.40017, -0.120925)
 size = Vector3(0.0916748, 0.0950928, 0.259277)
 material = SubResource("StandardMaterial3D_7ky6l")
+script = ExtResource("1_7ky6l")
 
 [node name="PropProng2" type="CSGBox3D" parent="Prop"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.536301, 1.40017, -0.225826)
 size = Vector3(0.0916748, 0.0950928, 0.259277)
 material = SubResource("StandardMaterial3D_l1x3g")
+script = ExtResource("1_7ky6l")
 
 [node name="PropProng3" type="CSGBox3D" parent="Prop"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.388955, 1.40017, -0.360329)
 size = Vector3(0.0916748, 0.0950928, 0.259277)
 material = SubResource("StandardMaterial3D_bw8cs")
+script = ExtResource("1_7ky6l")
 
 [node name="PropProng4" type="CSGBox3D" parent="Prop"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.277406, 1.40017, -0.218901)
 size = Vector3(0.0916748, 0.0950928, 0.259277)
 material = SubResource("StandardMaterial3D_u6dcr")
+script = ExtResource("1_7ky6l")

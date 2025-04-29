@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://cn5foxj1s64lx"]
+[gd_scene load_steps=4 format=3 uid="uid://cn5foxj1s64lx"]
 
 [ext_resource type="PackedScene" uid="uid://00mflo8532jh" path="res://prop_arm.tscn" id="1_uvgqj"]
+[ext_resource type="Script" uid="uid://cd1erxi0eup6i" path="res://drone.gd" id="2_d5du7"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_etgmo"]
 size = Vector3(1.32513, 0.335327, 1.33467)
@@ -19,6 +20,7 @@ size = Vector3(0.302673, 0.146484, 1)
 
 [node name="RigidBody3D" type="RigidBody3D" parent="CSGCombiner3D/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.348663, -0.150391, 0)
+script = ExtResource("2_d5du7")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/CSGBox3D/RigidBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.345612, 0.237557, -0.00818634)

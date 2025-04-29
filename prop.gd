@@ -1,6 +1,6 @@
-extends CSGCombiner3D
+extends CSGBox3D
 
-@export var rot_speed = 100
+@export var rot_speed = 1000
 
 func _ready():
 	pass # Replace with function body.
