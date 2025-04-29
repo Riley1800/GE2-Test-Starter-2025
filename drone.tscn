@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://00mflo8532jh" path="res://prop_arm.tscn" id="1_uvgqj"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_etgmo"]
-size = Vector3(0.302246, 0.160645, 1)
+size = Vector3(1.32513, 0.335327, 1.33467)
 
 [node name="Drone" type="Node3D"]
 
@@ -21,7 +21,7 @@ size = Vector3(0.302673, 0.146484, 1)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.348663, -0.150391, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/CSGBox3D/RigidBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.348877, 0.150216, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.345612, 0.237557, -0.00818634)
 shape = SubResource("BoxShape3D_etgmo")
 
 [node name="BottomRight" parent="CSGCombiner3D" instance=ExtResource("1_uvgqj")]

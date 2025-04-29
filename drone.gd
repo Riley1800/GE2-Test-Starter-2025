@@ -1,7 +1,7 @@
 extends RigidBody3D
 
 @export var target:Node3D
-@export var uprward_force:Vector3
+@export var upward_force:Vector3
 @export var forward_force:Vector3
 @export var backward_force:Vector3
 
@@ -18,7 +18,7 @@ func _process(delta):
 
 	var up = Input.get_axis("up", "blank")
 	if abs(up) > 0:     
-		global_translate(- global_transform.basis.y * speed * up *  delta)
+		upward_force * speed * up *  delta
 
 	var move = Input.get_axis("forward", "reverse")
 	if abs(move) > 0:   

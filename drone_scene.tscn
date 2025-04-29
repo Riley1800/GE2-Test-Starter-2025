@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://b1mt883kcp3i"]
+[gd_scene load_steps=9 format=3 uid="uid://b1mt883kcp3i"]
 
 [ext_resource type="PackedScene" uid="uid://cn5foxj1s64lx" path="res://drone.tscn" id="1_qhlfa"]
 
@@ -24,6 +24,9 @@ size = Vector2(100, 100)
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_jgr37"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_qhlfa"]
+size = Vector3(1.32513, 0.335327, 1.33467)
+
 [node name="drone_scene" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -46,3 +49,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.10388, 3.01379)
 
 [node name="Drone" parent="." instance=ExtResource("1_qhlfa")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.154139, -0.25752, 0.244515)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Drone"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Drone/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.345612, 0.506116, -0.00818634)
+shape = SubResource("BoxShape3D_qhlfa")
