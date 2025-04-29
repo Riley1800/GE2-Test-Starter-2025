@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://cn5foxj1s64lx"]
+
+[ext_resource type="PackedScene" uid="uid://00mflo8532jh" path="res://prop_arm.tscn" id="1_uvgqj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_etgmo"]
+size = Vector3(0.302246, 0.160645, 1)
+
+[node name="Drone" type="Node3D"]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.352572, 0.0358547, 0)
+
+[node name="PropArm" parent="CSGCombiner3D" instance=ExtResource("1_uvgqj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.452556, -0.563561, -0.372292)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00390851, 0.37778, 0)
+size = Vector3(0.302673, 0.146484, 1)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="CSGCombiner3D/CSGBox3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.348663, -0.150391, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/CSGBox3D/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.348877, 0.150216, 0)
+shape = SubResource("BoxShape3D_etgmo")
